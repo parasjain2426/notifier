@@ -228,7 +228,7 @@
                 <div class="reminder-content">
                     <c:forEach var="reminder" items="${reminders}">
                         <p>${reminder.noteName}</p>
-                        <p style="margin:2vw;">Started on: ${reminder.startDate}</p>
+                        <p>Started on: ${reminder.startDate}</p>
                         <br>
                     </c:forEach>
                 </div>
