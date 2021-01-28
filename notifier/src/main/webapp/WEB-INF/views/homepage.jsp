@@ -229,7 +229,6 @@
                     <c:forEach var="reminder" items="${reminders}">
                         <p>${reminder.noteName}</p>
                         <p style="margin:2vw;">Started on: ${reminder.startDate}</p>
-                        <p style="margin:2vw;">Ends on: ${reminder.endDate}</p>
                         <br>
                     </c:forEach>
                 </div>
@@ -265,7 +264,7 @@
                         <button style="float:right;margin:1vw;" id="editNote-${loop.index}" onclick="editNote('${note.noteId}')">Edit</button>
                         <a href="/delete/note/${userId}/${note.noteId}" style="float: right;margin:1vw;" id="${loop.index}">Delete</a>
                         <br><br>
-                        <h3 style="width: fit-content;height: auto;background-color:#0047ab;color: white;margin:2vw;">${note.status}</h3>
+                        <h3 style="width: fit-content;height: auto;background-color:#0047ab;color: white;margin:2vw;padding: 1vw;">${note.status}</h3>
                         <h3 style="margin:2vw;">Started on: ${note.startDate}</h3>
                     </div>
                     <br><br>
